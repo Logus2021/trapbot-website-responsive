@@ -1,0 +1,272 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'UniSans'; 
+    background-color: rgb(27, 27, 27);
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    color: #fff;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#loading {
+    background-color: rgb(32, 32, 32);
+}
+
+.fade {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+#navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 60%;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+#mobile-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 40px 40px 0px 40px; 
+}
+
+.imglogo-mobile {
+  padding-left: 6px;
+  padding-top: 4px;
+  display: inline;
+}
+
+.text-mobile {
+  position: absolute;
+  display: inline; 
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 7px;
+  color: black;
+}
+.imglogo {
+    padding-left: 7px;
+    padding-top: 5px;
+    display: inline;
+}
+
+.text {
+    position: absolute;
+    display: inline; 
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 20px;
+    padding-left: 7px;
+    color: black;
+}
+
+.buttons {
+    display: inline; 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 15px;
+    font-weight: 560;
+    float: right;
+    margin-right: 20px;
+
+    font-family: "Raleway", sans-serif;
+
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    color: black;
+}
+
+.buttons:hover {
+    margin-top: -2px;
+    color: rgb(43, 43, 43);
+}
+
+@font-face {
+    font-family: UniSans; 
+    src: url('./unisans.otf');
+} 
+
+#dropbtn {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  padding-right: 16px;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-family: "Raleway", sans-serif;
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1; border-radius: 0px 0px 0px 20px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  color: #f1f1f1;
+  font-family: "Raleway", sans-serif;
+  
+  font-weight: 360;
+}
+
+.headtext4 {
+  padding-top: 3px;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.headtext {
+  font-size: 37px;
+  font-weight: 400;
+}
+
+.head-button {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 48px;
+
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px;
+  width: 150px;
+  height: 48px;
+  color: #1d1d1d;
+  background-color: rgb(240, 240, 240);
+
+  font-size: 25px;
+
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.head-button:hover {
+  margin-top: -2px;
+  box-shadow: 0px 1px 15px #1f1f1f;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="header-text"] { 
+    width: 98%;
+  }
+  [class*="head-button"] { 
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
